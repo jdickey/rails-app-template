@@ -1,0 +1,53 @@
+#
+# DRAFT Rails New-App Command Line Defaults.
+# Copyright 2021, Jeff Dickey/Seven Sigma Agility
+# Licensed for public use under the MIT License.
+#
+# This file enhances the `rails new` command by supplying default parameters] as
+# though they were specified on the command line. Any conflicting parameters
+# supplied on the command line will override those specified here; e.g., if you
+# want to generate an API app using the template filie associated with this
+# parameter set, you would run something like
+#
+# ```
+# rails new -m ./template.rb --api
+# ```
+#
+# Note that the template has not yet been tested against such a setting. If you
+# run into problems, please open a bug report.
+#
+# known defaults
+--no-api
+--no-dev
+--no-edge
+--no-no-rc # obviously...
+--no-skip-action-cable
+--no-skip-active-record
+--no-skip-gemfile
+--no-skip-git
+--no-skip-javascript
+--no-skip-keeps
+--no-skip-listen
+--no-skip-puma
+--no-skip-sprockets
+--no-skip-turbolinks
+--no-skip-yarn
+--skip-coffee
+--skip-namespace
+--skip-system-test # ditto
+--skip-test # Don't use MiniTest; we'll add RSpec later
+# --ruby=/path/to/executable/ruby
+# --template=/path/to/app/template
+
+# Custom/non-default values
+--database=postgresql
+--skip-action-mailer
+--skip-active-storage
+--skip-bootsnap
+--no-skip-bundle
+--skip-spring
+--webpacker
+# --skip-webpack-install
+# --webpack=stimulus
+
+# --template=/path/to/template.rb
