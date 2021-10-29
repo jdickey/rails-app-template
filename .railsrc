@@ -20,7 +20,7 @@
 --no-api
 --no-dev
 --no-edge
---no-no-rc # obviously...
+--no-no-rc
 --no-skip-action-cable
 --no-skip-active-record
 --no-skip-gemfile
@@ -37,7 +37,6 @@
 --skip-system-test # ditto
 --skip-test # Don't use MiniTest; we'll add RSpec later
 # --ruby=/path/to/executable/ruby
-# --template=/path/to/app/template
 
 # Custom/non-default values
 --database=postgresql
